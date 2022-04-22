@@ -18,8 +18,4 @@ This module should be consumed by [Terragrunt App Demo](https://github.com/Dev-M
 
 ## Structure:
 
-<<<<<<< HEAD
-![Marques VPC](/var/home/Marques/Downloads/Simple App.png?raw=false "Marques VPC")
-=======
 ![Simple App](https://user-images.githubusercontent.com/5325106/164715583-09cbabc3-f554-401f-8312-f2233fcd52a2.png)
->>>>>>> 2372ba687200745a0e5b1d461367b982e6e4a7fe
