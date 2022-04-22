@@ -5,7 +5,7 @@ resource "aws_instance" "bastion" {
   key_name      = var.prefix_name
 
   subnet_id                   = data.aws_subnets.public_subnets.ids[0]
-  security_groups             = [aws_security_group.ssh_bastion.id]
+  security_groups             = [var.security_group_id]
   associate_public_ip_address = true
 
   tags = merge({Name = "${var.prefix_name}-bastion"},

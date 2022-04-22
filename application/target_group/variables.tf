@@ -13,7 +13,7 @@ variable "launch_configuration_names" {
 variable "health_check_paths" {
   description = "Health Check attributes default paths."
   type        = list(string)
-  default     = ["/app1/*", "/app2/*"]
+  default     = ["/app1/index.html", "/app2/index.html"]
 }
 
 variable "health_check" {

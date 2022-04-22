@@ -16,6 +16,12 @@ variable "private_key" {
   default     = ""
 }
 
+variable "security_group_id" {
+  description = ""
+  type        = string
+  default     = ""
+}
+
 variable "tags" {
   description = "Tracking tags."
   type        = map(string)

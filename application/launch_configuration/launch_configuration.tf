@@ -6,7 +6,6 @@ resource "aws_launch_configuration" "app_demo_vm"{
   instance_type = var.instance_type
 
   security_groups = [var.security_group_id]
-  associate_public_ip_address = true
 
   user_data = file("${path.module}/scripts/app_demo_vm_${count.index +1}.sh")
   key_name  = var.key_pair_name

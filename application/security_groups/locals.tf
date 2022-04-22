@@ -1,17 +1,21 @@
 locals {
-    allow_ssh_http_https = [{
+    load_balancer_security_group = [{
         port        = var.ports.http
         protocol    = "tcp"
-        allowed_ips = var.all_ips
     },
     {
         port        = var.ports.https
         protocol    = "tcp"
-        allowed_ips = var.all_ips
+    }]
+
+    app_vm_security_group = [{
+        port        = var.ports.http
+        protocol    = "tcp"
+        cidr_blocks = var.all_ips
     },
     {
         port        = var.ports.ssh
         protocol    = "tcp"
-        allowed_ips = var.public_cidr_block
+        cidr_blocks = var.public_cidr_block
     }]
 }
